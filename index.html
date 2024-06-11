@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Letter</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="topmenu">
+            <div class="scrolling-text">We bring you the daily uncut trends</div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="#" class="title">
+                    <p style="margin-left: 40px; color: wheat;">Daily</p>
+                    <p>News Letter</p>
+                </a>
+                <div class="navmenu">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <div class="dropdownnavmenu">
+                        <a href="#">News</a>
+                        <div class="dropdown">
+                            <a href="#">Politics</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Educational</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="d-flex">
+                        <img src="Images\weather.png" class="img-fluid w-90 me-2" alt="">
+                        <div class="d-flex align-items-center">
+                            <strong class="fs-4 text-secondary">31°C</strong>
+                            <div class="d-flex flex-column ms-2" style="width: 150px;">
+                                <span class="text-body" style="margin-left: 5px;">Kenya,</span>
+                                <small style="margin-left: 5px;">Mon. 10 Jun 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                </div>
+            </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlights">
+        <div class="politics">
+            <img src="Images\politics.jpg" alt="">
+            <div class="indiv">
+                <h3>Politics</h3>
+                <p>Browse for the latest in the political world</p>
+            </div>
+        </div>
+        <div class="sports">
+            <img src="Images\sports.webp" alt="">
+            <div class="indiv">
+                <h3>Sports</h3>
+                <p>Browse for the latest in the competitive world</p>
+            </div>
+        </div>
+        <div class="technology">
+            <img src="Images\tech.jpg" alt="">
+            <div class="indiv">
+                <h3>Technology</h3>
+                <p>Browse for the latest updates on technological advancements</p>
+            </div>
+        </div>
+        <div class="fashion">
+            <img src="Images\fashion.webp" alt="">
+            <div class="indiv">
+                <h3>Fashion</h3>
+                <p>Browse for the latest fashion trends</p>
+            </div>
+        </div>
+    </div>
+    <div class="bodycontent">
+        <div class="topstory">
+            <img src="Images\news-1.jpg" alt="">
+            <a href="#">
+                <h3>
+                    The Kenyan government is being held responsible for...
+                </h3>
+            </a>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley... 
+            </p> <br><br>
+            <div>
+                <h1>Top Story</h1>
+                <div class="story1">
+                    <img src="Images\news-3.jpg" alt="">
+                    <a href="#">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="adverts">
+            <img src="Images\news-2.jpg" alt="">
+            <a href="#">
+                <h3>
+                    Find amazing market trends...
+                </h3>
+            </a> <br>
+            <div class="moreads">
+                <img src="Images\news-4.jpg" alt="">
+                <a href="#">
+                    <h4>
+                        Find amazing market trends...
+                    </h4>
+                </a>
+            </div>
+            <div class="moreads">
+                <img src="Images\news-5.jpg" alt="">
+                <a href="#">
+                    <h4>
+                        Find amazing market trends...
+                    </h4>
+                </a>
+            </div>
+            <div class="moreads">
+                <img src="Images\news-6.jpg" alt="">
+                <a href="#">
+                    <h4>
+                        Find amazing market trends...
+                    </h4>
+                </a>
+            </div>
+            <div class="moreads">
+                <img src="Images\news-7.jpg" alt="">
+                <a href="#">
+                    <h4>
+                        Find amazing market trends...
+                    </h4>
+                </a>
+            </div>
+            <div class="moreads">
+                <img src="Images\news-8.jpg" alt="">
+                <a href="#">
+                    <h4>
+                        Find amazing market trends...
+                    </h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1>Daily NewsLetter</h1>
+                <h2>Get Daily Updates</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley
+                </p>
+                <div class="input">
+                    <input class="placeholder" type="email" placeholder="Your Email">
+                    <button type="submit" class="subscribenow">Subscribe Now</button>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="Images/banner-img.jpg" alt="Subscribe Banner">
+            </div>
+        </div>
+    </div>
+
+    <div class="latestnews">
+        <h1>Latest News</h1>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-1.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-6.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-1.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-3.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-4.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-1.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-5.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="newsimage">
+                    <img src="Images\news-1.jpg" alt="">
+                </div>
+                <div class="newscontent">
+                    <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                    <div class="auther">
+                        <a href="#">by Jaymie Cutter</a>
+                        <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatstrending">
+        <div class="toptrends">
+            <h1>What's New</h1>
+            <ul>
+                <li class="toplinks">
+                    <a class="storylink" data-bs-toggle="pill" href="#tab-1">
+                        <span>Sports</span>
+                    </a>
+                </li>
+                <li class="toplinks">
+                    <a class="storylink" data-bs-toggle="pill" href="#tab-2">
+                        <span>Magazine</span>
+                    </a>
+                </li>
+                <li class="toplinks">
+                    <a class="storylink" data-bs-toggle="pill" href="#tab-3">
+                        <span>Politics</span>
+                    </a>
+                </li>
+                <li class="toplinks">
+                    <a class="storylink" data-bs-toggle="pill" href="#tab-4">
+                        <span>Technology</span>
+                    </a>
+                </li>
+                <li class="toplinks">
+                    <a class="storylink" data-bs-toggle="pill" href="#tab-5">
+                        <span>Fashion</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="maintrend">
+                <div id="tab-1" class="storytrend">
+                    <div class="storytrend1">
+                        <img src="Images/news-1.jpg" alt=""><br>
+                        <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                            Sports
+                        </div>
+                    </div><br>
+                    <div class="my-4">
+                        <a href="#" class="h4" style="text-decoration: none; color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                    </div><br><br>
+                    <div class="reports">
+                        <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                        <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                        <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                        <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                    </div>
+                    <p class="my-4">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy Lorem Ipsum has been the industry's standard dummy..
+                    </p>
+                </div>
+                <div class="similartrends">
+                    <div class="similartrendsstory">
+                        <a href="#">
+                            <img src="Images/news-1.jpg" alt="">
+                            <h4>Sports</h4>
+                            <p>Get the best news on market trends</p>
+                        </a>
+                    </div>
+                    <div class="similartrendsstory">
+                        <a href="#">
+                            <img src="Images/news-1.jpg" alt="">
+                            <h4>Sports</h4>
+                            <p>Get the best news on market trends</p>
+                        </a>
+                    </div>
+                    <div class="similartrendsstory">
+                        <a href="#">
+                            <img src="Images/news-1.jpg" alt="">
+                            <h4>Sports</h4>
+                            <p>Get the best news on market trends</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mostviewed">
+                <h1>Most Viewed News</h1>
+                <div class="mostviewedcontent">
+                    <div class="mostviewedimg">
+                        <img src="Images\news-5.jpg" alt="">
+                    </div>
+                    <div class="mostviewednewscontent">
+                        <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                        <div class="auther">
+                            <a href="#">by Jaymie Cutter</a>
+                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mostviewedcontent">
+                    <div class="mostviewedimg">
+                        <img src="Images\news-6.jpg" alt="">
+                    </div>
+                    <div class="mostviewednewscontent">
+                        <a href="#">Lorem Ipsum is simply dummy text of...</a>
+                        <div class="auther">
+                            <a href="#">by Jaymie Cutter</a>
+                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lifestyle">
+                <div class="lifestyleheader">
+                    <h1>Life Style</h1>
+                </div>
+                <div class="lifestylecontent">
+                    <div class="lifestylecontent1">
+                        <img src="Images/footer-4.jpg" alt="">
+                        <div class="lifestyle-content">
+                            <div class="lifestylecontent2">
+                                <a href="#">There are many variations of passages of Lorem Ipsum available,</a><br><br>
+                                <div class="lifestylecontent3">
+                                    <a href="#">By Willium Smith</a>
+                                    <small><i></i> Dec 9, 2024</small><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lifestylecontent1">
+                        <img src="Images/footer-4.jpg" alt="">
+                        <div class="lifestyle-content">
+                            <div class="lifestylecontent2">
+                                <a href="#">There are many variations of passages of Lorem Ipsum available,</a><br>
+                                <div class="lifestylecontent3">
+                                    <a href="#">By Willium Smith</a><br>
+                                    <small><i></i> Dec 9, 2024</small><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <h3>Stay Connected</h3>
+            <div class="sociallinks">
+                <a href="#" style=" background: linear-gradient(135deg, #1877F2 0%, #1877F2 100%);">
+                    <i class="fab fa-facebook-f btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">13,977 Fans</span>
+                </a>
+                <a href="#" style="background: linear-gradient(135deg, #1DA1F2 0%, #1DA1F2 100%);">
+                    <i class="fab fa-twitter btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">21,798 Followers</span>
+                </a>
+                <a href="#" style="background: linear-gradient(135deg, #FF0000 0%, #FF0000 100%);">
+                    <i class="fab fa-youtube btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">7,999 Subscribers</span>
+                </a>
+                <a href="#" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+                    <i class="fab fa-instagram btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">19,764 Followers</span>
+                </a>
+                <a href="#" style="background: linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%);">
+                    <i class="fab fa-tiktok btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">19,764 Followers</span>
+                </a>
+                <a href="#" style="background: linear-gradient(135deg, #010101 0%, #69C9D0 50%, #EE1D52 100%);">
+                    <i class="fab fa-dribbble btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">37,999 Subscribers</span>
+                </a>
+                <a href="#" style="background-color: #7881b8;">
+                    <i class="fa fa-eye btn btn-light btn-square rounded-circle me-3"></i>
+                    <span class="text-white">370,999 Daily estimate Views</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerheader">
+            <div>
+                <a href="#" class="title">
+                    <p style="margin-left: 40px; color: wheat;">Daily</p>
+                    <p>News Letter</p>
+                </a>
+            </div>
+            <div class="input">
+                <input class="placeholder" type="email" placeholder="Your Email" style="height: 20px; width: 400px;">
+                <button type="submit" class="subscribenow" style="height: 40px; width: 200px;">Subscribe Now</button>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div class="footerbottom1">
+                <h1 style="color: aliceblue;">Get In Touch</h1>
+                <p style="color: aliceblue;">Address: <span>Nation Streat, Nairobi, Kenya</span></p>
+                <p style="color: aliceblue;">Email: <span>dailynewsletter@gmail.com</span></p>
+                <p style="color: aliceblue;">Phone: <span>+2543 4567 8910</span></p>
+                <div class="d-flex line-h">
+                    <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter text-dark" style="color: aliceblue;"></i></a>
+                    <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f text-dark" style="color: aliceblue; margin-left: 15px;"></i></a>
+                    <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube text-dark" style="color: aliceblue; margin-left: 15px;"></i></a>
+                    <a class="btn btn-light btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in text-dark" style="color: aliceblue; margin-left: 15px;"></i></a>
+                </div>
+            </div>
+            <div class="recentposts">
+                <h1 class="mb-4 text-white">Recent Posts</h1>
+                <a href="#">
+                    <div class="recentpostscontent">
+                        <img src="Images/footer-1.jpg"alt="">
+                        <div class="recentpostscontent1">
+                            <p>Life Style</p>
+                            <a href="#" class="h6 text-white">
+                                Get the best speak market, news.
+                            </a>
+                            <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="recentpostscontent">
+                        <img src="Images/footer-2.jpg"alt="">
+                        <div class="recentpostscontent1">
+                            <p>Life Style</p>
+                            <a href="#" class="h6 text-white">
+                                Get the best speak market, news.
+                            </a>
+                            <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="Categories">
+                <div class="Categories1">
+                    <h4 class="mb-4 text-white">Categories</h4>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Sports</a>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Magazine</a>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Lifestyle</a>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Politician</a>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Technology</a>
+                    <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Intertainment</a>
+                </div>
+            </div>
+            <div class="gallery">
+                <img src="Images\footer-1.jpg" alt="">
+                <img src="Images\footer-2.jpg" alt="">
+                <img src="Images\footer-3.jpg" alt="">
+                <img src="Images\footer-5.jpg" alt="">
+                <img src="Images\footer-4.jpg" alt="">
+                <img src="Images\footer-6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="copyrightsitename">
+                    <span><a href="#" class="text-light">Copyright &copy; 2024 Daily Newsletter</a>, All rights reserved.</span>
+                </div>
+                <div class="copyrightsitedeveloper">
+                    Designed By <a class="border-bottom" href="#">Stallions Techies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const navmenu = document.querySelector('.navmenu');
+            navmenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
