@@ -972,3 +972,573 @@ body {
     }
 
 }
+
+/*Tablet (768px to 1024px)*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar nav {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navmenu {
+        display: none;
+        flex-direction: column;
+        background-color: #40C2DE;
+        align-items: flex-start;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navmenu.active {
+        display: flex;
+    }
+
+    .navmenu a {
+        padding: 10px;
+        width: 130px;
+        text-align: left;
+    }
+
+    .title {
+        margin-left: 20px;
+    }
+
+    .dropdownnavmenu .dropdown a {
+        padding: 10px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 5px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+    }
+
+    .title {
+        flex-grow: 1;
+    }
+
+    .bodycontent {
+        flex-direction: column;
+    }
+
+    .topstory,
+    .adverts {
+        width: 370px;
+        margin-bottom: 20px;
+    }
+
+    .topstory img {
+        width: 350px;
+    }
+
+    .adverts img {
+        width: 350px;
+    }
+
+    .bodycontent {
+        flex-direction: column;
+    }
+
+    .topstory,
+    .adverts {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .story1 {
+        display: block;
+    }
+
+    .story1 img {
+        width: 350px;
+    }
+
+    .moreads img {
+        width: 120px;
+        height: auto;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .input .placeholder {
+        width: calc(100% - 130px);
+    }
+
+    .latestnews {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .news1 {
+        width: 150px;
+    }
+
+    .toptrends {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 400px;
+        margin-left: 0;
+    }
+
+    .toplinks {
+        display: block;
+    }
+
+    .toptrends ul {
+        margin-top: 10px;
+        margin-left: 0;
+        display: block;
+        padding: 10px;
+    }
+
+    .toptrends .toplinks {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .storytrend {
+        margin-left: 0;
+    }
+
+    .storytrend1 img {
+        margin-left: 5px;
+        width: 380px;
+        border-radius: 10px;
+    }
+
+    .similartrendsstory {
+        display: flex;
+        align-items: center;
+      }
+
+    .maintrend {
+        display: block;
+    }
+
+    .whatstrending {
+        display: block;
+    }
+
+    .sociallinks {
+        flex-direction: column;
+    }
+
+    .mostviewedimg img {
+        width: 350px;
+    }
+
+    .mostviewedcontent {
+        margin: 20px;
+        display: block;
+    }
+
+    .lifestylecontent {
+        display: block;
+    }
+
+    .lifestylecontent img {
+        width: 350px;
+    }
+    
+    .footerheader {
+        display: block;
+        margin: 10px;
+    }
+
+    .input {
+        margin: 10px;
+    }
+
+    .footerbottom {
+        display: block;
+        margin-left: 20px;
+    }
+}
+ /*Small Desktops (1024px to 1280px)*/
+ @media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar nav {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navmenu {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .navmenu a {
+        padding: 10px 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 20px;
+    }
+
+    .dropdownnavmenu .dropdown a {
+        padding: 10px;
+    }
+
+    .location {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .title {
+        flex-grow: 1;
+    }
+
+    .bodycontent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .topstory,
+    .adverts {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .topstory img {
+        width: 100%;
+    }
+
+    .adverts img {
+        width: 100%;
+    }
+
+    .story1 {
+        display: block;
+    }
+
+    .story1 img {
+        width: 100%;
+    }
+
+    .moreads img {
+        width: 100px;
+        height: auto;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .text-content {
+        margin-right: 20px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    
+    .input .placeholder {
+        width: calc(100% - 130px);
+    }
+
+    .latestnews {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .news1 {
+        width: 100px;
+    }
+
+    .toptrends {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .toplinks {
+        display: flex;
+    }
+
+    .toptrends ul {
+        margin-top: 0;
+        margin-left: 20px;
+        display: flex;
+        padding: 0;
+    }
+
+    .toptrends .toplinks {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .storytrend {
+        margin-left: 10px;
+    }
+
+    .storytrend1 img {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .similartrendsstory {
+        display: flex;
+        align-items: center;
+    }
+
+    .maintrend {
+        display: block;
+    }
+
+    .whatstrending {
+        display: block;
+    }
+
+    .sociallinks {
+        flex-direction: row;
+    }
+
+    .mostviewedimg img {
+        width: 100%;
+    }
+
+    .mostviewedcontent {
+        margin: 20px;
+        display: block;
+    }
+
+    .lifestylecontent {
+        display: block;
+    }
+
+    .lifestylecontent img {
+        width: 100%;
+    }
+    
+    .footerheader {
+        display: block;
+        margin: 10px;
+    }
+
+    .input {
+        margin: 10px;
+    }
+
+    .footerbottom {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+/*Medium to Large Desktops (1280px and above)*/
+@media (min-width: 1281px) {
+    .navbar nav {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navmenu {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .navmenu a {
+        padding: 10px 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 20px;
+    }
+
+    .dropdownnavmenu .dropdown a {
+        padding: 10px;
+    }
+
+    .location {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .title {
+        flex-grow: 1;
+    }
+
+    .bodycontent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .topstory,
+    .adverts {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .topstory img {
+        width: 100%;
+    }
+
+    .adverts img {
+        width: 100%;
+    }
+
+    .story1 {
+        display: block;
+    }
+
+    .story1 img {
+        width: 100%;
+    }
+
+    .moreads img {
+        width: 100px;
+        height: auto;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .text-content {
+        margin-right: 20px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    
+    .input .placeholder {
+        width: calc(100% - 130px);
+    }
+
+    .latestnews {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .news1 {
+        width: 100px;
+    }
+
+    .toptrends {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .toplinks {
+        display: flex;
+    }
+
+    .toptrends ul {
+        margin-top: 0;
+        margin-left: 20px;
+        display: flex;
+        padding: 0;
+    }
+
+    .toptrends .toplinks {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .storytrend {
+        margin-left: 10px;
+    }
+
+    .storytrend1 img {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .similartrendsstory {
+        display: flex;
+        align-items: center;
+    }
+
+    .maintrend {
+        display: block;
+    }
+
+    .whatstrending {
+        display: block;
+    }
+
+    .sociallinks {
+        flex-direction: row;
+    }
+
+    .mostviewedimg img {
+        width: 100%;
+    }
+
+    .mostviewedcontent {
+        margin: 20px;
+        display: block;
+    }
+
+    .lifestylecontent {
+        display: block;
+    }
+
+    .lifestylecontent img {
+        width: 100%;
+    }
+    
+    .footerheader {
+        display: block;
+        margin: 10px;
+    }
+
+    .input {
+        margin: 10px;
+    }
+
+    .footerbottom {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+
